@@ -9,7 +9,7 @@
         <meta name="generator" content="Bootply" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
-        
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
         <!--[if lt IE 9]>
           <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -31,7 +31,7 @@
         
         <style type="text/css">
             /* override bootstrap styles */
-@import url('http://fonts.googleapis.com/css?family=Oswald:300,400:latin,latin-ext');
+
 
 .navbar-form input, .form-inline input {
   width:auto;
@@ -43,7 +43,10 @@ body {
   background-color:#efefef;
 }
 
-h1,h2,h3,.highlight,.navbar a,#masthead h4 {
+.navbar {font-family:"Helvetica Neue" !important;
+      font-size:16px !important;}
+
+h1,h2,h3,.highlight,a,#masthead h4 {
   font-family:'Oswald',arial narrow,sans-serif;
 }
 
@@ -59,7 +62,7 @@ footer {
 
 #masthead {
   min-height:199px;
-  background-color:#000044;
+  background-color:black;
   color:#aaaacc;
 }
 
@@ -72,9 +75,8 @@ footer {
 
 #masthead .well {
   margin-top:31px;
-  background-color:#111166;
-  border-color:#000022;
-  color:#efefff;
+  background-color:#fff;
+  color:black;
   min-height:127px;
 }
 
@@ -203,53 +205,33 @@ a,a:hover {
     
     <!-- HTML code from Bootply.com editor -->
     
-    <body  >
-        
-        <header class="navbar navbar-bright navbar-fixed-top" role="banner">
-  <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="/" class="navbar-brand">Home</a>
-    </div>
-    <nav class="collapse navbar-collapse" role="navigation">
-      <ul class="nav navbar-nav">
-        <li>
-          <a href="#">Category</a>
-        </li>
-        <li>
-          <a href="#">Category</a>
-        </li>
-        <li>
-          <a href="#">Category</a>
-        </li>
-        <li>
-          <a href="#">Category</a>
-        </li>
-      </ul>
-      <ul class="nav navbar-right navbar-nav">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
-          <ul class="dropdown-menu" style="padding:12px;">
-            <form class="form-inline">
-              <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button><input type="text" class="form-control pull-left" placeholder="Search">
-            </form>
+    <body >
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">OpenGrasp</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/beta">Topics</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </div><!-- /.navbar -->
 
 <div id="masthead">  
   <div class="container">
     <div class="row">
       <div class="col-md-7">
-        <h1>Storystrap
+        <h1>Topic Name
           <p class="lead"></p>
         </h1>
       </div>
@@ -257,7 +239,7 @@ a,a:hover {
         <div class="well well-lg"> 
           <div class="row">
             <div class="col-sm-12">
-              
+              <p>Descriptive text can possibly go here?</p>
       
             </div>
           </div>

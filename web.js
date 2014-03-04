@@ -11,7 +11,7 @@ app.get('/', function(request, response) {
   response.send(hw.toString());
 });
 app.get('/beta', function(request, response) {
-  var hw = fs.readFileSync('public/beta/topics.hmtl');
+  var hw = fs.readFileSync('public/beta/topics.html');
   response.send(hw.toString());
 });
 app.get('/beta/tutorial_list', function(request, response) {

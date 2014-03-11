@@ -10,16 +10,16 @@ app.get('/', function(request, response) {
   var hw = fs.readFileSync('public/index.html');
   response.send(hw.toString());
 });
-app.get('/beta', function(request, response) {
-  var hw = fs.readFileSync('public/beta/topics.html');
+app.get('/demo', function(request, response) {
+  var hw = fs.readFileSync('public/demo/topics.html');
   response.send(hw.toString());
 });
-app.get('/beta/tutorials', function(request, response) {
-  var hw = fs.readFileSync('public/beta/tutorial_list.html');
+app.get('/demo/tutorials', function(request, response) {
+  var hw = fs.readFileSync('public/demo/tutorial_list.html');
   response.send(hw.toString());
 });
-app.get('/beta/tutorials/1', function(request, response) {
-  var hw = fs.readFileSync('public/beta/tut1.html');
+app.get('/demo/tutorials/1', function(request, response) {
+  var hw = fs.readFileSync('public/demo/tut1.html');
   response.send(hw.toString());
 });
 

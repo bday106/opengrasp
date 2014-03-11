@@ -2,7 +2,7 @@ var express = require('express');
 var fs = require('fs');
 var path = require('path');
 
-var app = express.createServer(express.logger());
+var app = express();
 
 app.use(express.static(path.join(__dirname, 'public')));
 
